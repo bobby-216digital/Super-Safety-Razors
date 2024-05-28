@@ -45,7 +45,7 @@
     .productGrid {
         .product { // 1
             @include breakpoint("small") {
-                width: grid-calc(4, $total-columns);
+                width:25%;
             }
         }
     }

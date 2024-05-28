@@ -3,6 +3,7 @@
 
 <form class="form" action="{{urls.subscribe.action}}" method="post">
     <fieldset class="form-fieldset">
+        <legend class="is-sr0nly">Subscription Form</legend>
         <input type="hidden" name="action" value="subscribe">
         <input type="hidden" name="nl_first_name" value="bc">
         <input type="hidden" name="check" value="1">
@@ -15,7 +16,6 @@
                        type="email"
                        value="{{customer.email}}"
                        placeholder="{{lang 'newsletter.email_placeholder'}}"
-                       aria-describedby="alertBox-message-text"
                        aria-required="true"
                        autocomplete="email"
                        required
