@@ -18,7 +18,7 @@
 
 .slick-next,
 .slick-prev {
-    @include carouselOpaqueBackgrounds($slick-arrow-bgColor);
+   // @include carouselOpaqueBackgrounds($slick-arrow-bgColor);
     border: 1px solid $slick-arrow-borderColor;
     height: remCalc(61px);
     margin-top: -(remCalc(15px));
@@ -255,7 +255,7 @@ div.slick-slider {
 // -----------------------------------------------------------------------------
 
 .carousel-play-pause-button {
-    @include carouselOpaqueBackgrounds($slick-play-pause-button-bgColor);
+  //  @include carouselOpaqueBackgrounds($slick-play-pause-button-bgColor);
     border: 1px solid $slick-play-pause-button-borderColor;
     bottom: spacing("third");
     color: $slick-play-pause-button-color;

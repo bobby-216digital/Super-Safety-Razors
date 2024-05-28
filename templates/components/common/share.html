@@ -33,6 +33,7 @@
                     </a>
                     {{else if service '===' 'print'}}
                     <a class="socialLinks__link icon icon--{{service}}"
+                       href="javascript:void(0);"
                        title="{{{capitalize service}}}"
                        onclick="window.print();return false;"
                        {{{annotation}}}

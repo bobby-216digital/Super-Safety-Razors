@@ -16,7 +16,7 @@
 .heroCarousel {
     margin-bottom: (spacing("double") + spacing("single"));
     margin-top: -(spacing("single")); // 3
-    min-width: 100%;
+   // min-width: 100%; 
     width: 1px;
 
     @include breakpoint("medium") {
@@ -81,7 +81,7 @@
         }
 
         li {
-            @include carouselOpaqueBackgrounds($slick-dot-bgColor);
+          //  @include carouselOpaqueBackgrounds($slick-dot-bgColor);
         }
     }
 

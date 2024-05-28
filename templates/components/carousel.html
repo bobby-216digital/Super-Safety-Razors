@@ -17,24 +17,10 @@
     {{/if}}
         <div class="heroCarousel-slide {{#if ../theme_settings.homepage_stretch_carousel_images}}stretch{{/if}} {{#if @first}}heroCarousel-slide--first{{/if}}">
             {{#if button_text}}
-            <a href="{{url}}" class="heroCarousel-image-wrapper">
+            <a href="{{url}}" class="heroCarousel-image-wrapper" style="background-image: url('{{getImage stencil_image}}'); background-size: cover; background-position: center center;" aria-label="{{this.alt_text}}">
+                <div class="heroCarousel-image" style="height: 100%; width: 100%"></div>
             {{else}}
             <div class="heroCarousel-image-wrapper">
-            {{/if}}
-            {{#if @first}}
-                {{> components/common/responsive-img
-                    image=stencil_image
-                    class="heroCarousel-image"
-                    fallback_size='1280w'
-                    lazyload='disabled'
-                }}
-            {{else}}
-                {{> components/common/responsive-img
-                    image=stencil_image
-                    class="heroCarousel-image"
-                    fallback_size='1280w'
-                    lazyload='lazyload'
-                }}
             {{/if}}
             {{#if button_text}}
             </a>
@@ -58,3 +44,9 @@
         {{/if}}
     {{/if}}
 </section>
+
+<style>
+    .heroCarousel {
+        width: 100%;
+    }
+</style>

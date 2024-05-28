@@ -77,3 +77,17 @@
 // -----------------------------------------------------------------------------
 
 @import "layouts/layouts"; // 1
+
+.is-sr0nly { 
+  position: absolute; left: -10000px; 
+} 
+.skip-link { 
+  color: black; background-color: white; padding: 12px; border: 2px solid black; border-radius: 5px; z-index: 999; 
+} 
+.skip-link:focus-visible { 
+  left: 0px; 
+}
+.slick-initialized {
+margin:auto;
+}
+

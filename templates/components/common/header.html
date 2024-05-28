@@ -1,5 +1,6 @@
 <a href="#main-content" class="skip-to-main-link">{{lang 'header.skip_to_main'}}</a>
 {{#if banners.top}}
+{{#if page_type '!==' 'category'}}
 <div class="banners" data-banner-location="top">
     {{#each (limit banners.top_metadata 1)}}
     <div class="banner" data-event-type="promotion" data-entity-id="{{this.id}}" data-name="{{this.banner-name}}" data-position="{{this.location}}" data-banner-id="{{this.banner-name}}">
@@ -10,7 +11,21 @@
     {{/each}}
 </div>
 {{/if}}
+{{/if}}
 <header class="header" role="banner">
+    <div class="banners" data-banner-location="top">
+    <div class="banner" data-event-type="promotion">
+        <div data-event-type="promotion-click">
+            <div class="promo-banner">
+                <ul>
+                <li><em class="fa fa-truck">&nbsp;</em> <strong>FREE SHIPPING</strong> on U.S. Orders $45+</li>
+                <li><em class="fa fa-ticket">&nbsp;</em> <strong>FREE BLADES</strong> WITH ALL SAFETY RAZORS</li>
+                <li><em class="fa fa-globe">&nbsp;</em> <strong>WORLDWIDE SHIPPING</strong> $12.95 CANADA $19.95 INT'L</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
     <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu">
         <span class="mobileMenu-toggleIcon">Toggle menu</span>
     </a>
